@@ -69,27 +69,3 @@ app.get('/lastRead', function(req, res){
 app.listen(3000,function(){
         console.log("Express Server Ready on port 3000");
 });
-
-/*
-var last = "ON";
-
-setInterval(function(){
-	var newPacket = {
-		topic: 'inTopic',
-		payload: last,
-		retain: false,
-		qos: 0
-	};	
-	server.publish(newPacket, function(){
-		console.log("Published");
-		if(last == "ON")
-		{
-			last = "OFF";
-		}
-		else
-		{
-			last = "ON";
-		}
-	});
-},10000);
-*/
